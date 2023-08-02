@@ -36,6 +36,7 @@ export class MyComponent {
       <div>
         Hello, World! I'm {this.getText()}
         <button onClick={this.myChange.emit}>Click Me</button>
+        <my-test color="" />
       </div>
     );
   }

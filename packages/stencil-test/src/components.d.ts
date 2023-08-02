@@ -5,6 +5,8 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { LiteralUnion } from "./components/my-test/my-test";
+export { LiteralUnion } from "./components/my-test/my-test";
 export namespace Components {
     interface MyComponent {
         /**
@@ -20,6 +22,9 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface MyTest {
+        "color": LiteralUnion<'red' | 'pink'>;
+    }
 }
 export interface MyComponentCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -32,8 +37,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLMyTestElement extends Components.MyTest, HTMLStencilElement {
+    }
+    var HTMLMyTestElement: {
+        prototype: HTMLMyTestElement;
+        new (): HTMLMyTestElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "my-test": HTMLMyTestElement;
     }
 }
 declare namespace LocalJSX {
@@ -55,8 +67,12 @@ declare namespace LocalJSX {
          */
         "onMyChange"?: (event: MyComponentCustomEvent<any>) => void;
     }
+    interface MyTest {
+        "color"?: LiteralUnion<'red' | 'pink'>;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "my-test": MyTest;
     }
 }
 export { LocalJSX as JSX };
@@ -64,6 +80,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "my-test": LocalJSX.MyTest & JSXBase.HTMLAttributes<HTMLMyTestElement>;
         }
     }
 }
