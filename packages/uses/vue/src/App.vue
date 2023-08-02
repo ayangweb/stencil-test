@@ -3,5 +3,6 @@ import { MyComponent } from "@stencil-test/vue";
 </script>
 
 <template>
-	<MyComponent first="Stencil" class="test" style="color: red" />
+	<MyComponent first="Stencil" class="test" />
+	<MyComponent first="Stencil" style="color: red" />
 </template>
