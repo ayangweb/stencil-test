@@ -9,3 +9,11 @@ pnpm install
 ```shell
 pnpm build
 ```
+
+## Dev
+
+```shell
+pnpm dev:react
+
+pnpm dev:solid
+```
