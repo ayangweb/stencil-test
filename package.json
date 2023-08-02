@@ -9,6 +9,8 @@
 		"build": "run-s build:*",
 		"dev:core": "pnpm -F stencil-test start",
 		"build:core": "pnpm -F stencil-test build",
+		"dev:vue": "pnpm -F @stencil-test/vue-use dev",
+		"build:vue": "pnpm -F @stencil-test/vue build",
 		"dev:react": "pnpm -F @stencil-test/react-use dev",
 		"build:react": "pnpm -F @stencil-test/react build",
 		"dev:solid": "pnpm -F @stencil-test/solid-use dev",

@@ -30,12 +30,13 @@
   },
   "devDependencies": {
     "@stencil/react-output-target": "^0.5.3",
+    "@stencil/vue-output-target": "^0.8.6",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1",
     "puppeteer": "^19.11.1",
-    "stencil-solid-output-target": "^0.1.2"
+    "stencil-solid-output-target": "github:arthur-fontaine/stencil-solid-output-target#pull/9/head"
   },
   "license": "MIT"
 }
