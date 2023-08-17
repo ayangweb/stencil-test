@@ -4,6 +4,7 @@ function App() {
 	return (
 		<>
 			<MyComponent
+				first="React"
 				onMyChange={() => {
 					console.log("React Trigger");
 				}}

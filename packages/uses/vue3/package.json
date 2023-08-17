@@ -1,5 +1,5 @@
 {
-	"name": "@stencil-test/vue-use",
+	"name": "@stencil-test/vue3-use",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -9,7 +9,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@stencil-test/vue": "^0.0.0",
+		"@stencil-test/vue3": "^0.0.0",
 		"vue": "^3.3.4"
 	},
 	"devDependencies": {

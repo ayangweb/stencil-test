@@ -4,6 +4,7 @@ function App() {
 	return (
 		<>
 			<MyComponent
+				first="Solid"
 				onMyChange={() => {
 					console.log("Solid Trigger");
 				}}

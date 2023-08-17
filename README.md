@@ -13,7 +13,9 @@ pnpm build
 ## Dev
 
 ```shell
-pnpm dev:vue
+pnpm dev:vue2
+
+pnpm dev:vue3
 
 pnpm dev:react
 
