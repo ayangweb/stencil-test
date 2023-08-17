@@ -8,6 +8,9 @@ function App() {
 				onMyChange={() => {
 					console.log("Solid Trigger");
 				}}
+				style={{
+					color: "red",
+				}}
 			></MyComponent>
 		</>
 	);
