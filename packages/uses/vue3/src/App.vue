@@ -8,7 +8,7 @@ const handleChange = () => {
 
 <template>
 	<MyComponent first="Stencil" class="test" />
-	<MyComponent first="Stencil" style="color: red" />
+	<MyComponent first="Stencil" :style="{ color: 'red' }" />
 	<MyComponent first="my-change" @my-change="handleChange" />
 	<MyComponent first="myChange" @myChange="handleChange" />
 
@@ -17,6 +17,6 @@ const handleChange = () => {
 	</MyComponent>
 
 	<my-component>
-		<my-test slot="test" />
+		<my-test slot="test" @mouseover="handleChange" />
 	</my-component>
 </template>

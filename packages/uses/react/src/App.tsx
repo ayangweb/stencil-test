@@ -8,7 +8,12 @@ function App() {
 				onMyChange={() => {
 					console.log("React Trigger");
 				}}
+				style={{
+					color: "red",
+				}}
+				slot="123213"
 			></MyComponent>
+			<div></div>
 		</>
 	);
 }

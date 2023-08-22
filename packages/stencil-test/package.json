@@ -39,7 +39,7 @@
     "jest-cli": "^27.5.1",
     "npm": "^9.8.1",
     "puppeteer": "^19.11.1",
-    "stencil-solid-output-target": "github:arthur-fontaine/stencil-solid-output-target#pull/11/head"
+    "stencil-solid-output-target": "github:arthur-fontaine/stencil-solid-output-target#pull/14/head"
   },
   "license": "MIT"
 }

@@ -10,6 +10,6 @@ export class MyTest {
   @Prop() color: LiteralUnion<'red' | 'pink'>;
 
   render() {
-    return <Host>I'm Test Type LiteralUnion</Host>;
+    return <Host>I'm Test Type LiteralUnion <slot /></Host>;
   }
 }
