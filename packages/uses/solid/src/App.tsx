@@ -11,11 +11,10 @@ function App() {
 				style={{
 					color: "red",
 				}}
-			>
-			</MyComponent>
+			></MyComponent>
 
 			<MyTest slot="test">
-				<input />
+				<p>123</p>
 			</MyTest>
 		</>
 	);

@@ -7,7 +7,7 @@ export interface HTMLStencilElement extends HTMLElement {
 }
 
 interface StencilSolidInternalProps<ElementType>
-	extends JSX.DOMAttributes<ElementType> { }
+	extends JSX.DOMAttributes<ElementType> {}
 
 export interface ComponentSupplementaryTypes {
 	style?: Record<string, any>;

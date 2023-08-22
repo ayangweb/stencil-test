@@ -1,4 +1,4 @@
-import { MyComponent } from "@stencil-test/react";
+import { MyComponent, MyTest } from "@stencil-test/react";
 
 function App() {
 	return (
@@ -11,9 +11,11 @@ function App() {
 				style={{
 					color: "red",
 				}}
-				slot="123213"
 			></MyComponent>
-			<div></div>
+
+			<MyTest>
+				<p>123</p>
+			</MyTest>
 		</>
 	);
 }
