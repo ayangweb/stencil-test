@@ -22,6 +22,7 @@ export const MyComponent = /*@__PURE__*/ Vue.extend({
     first: {} as PropOptions<Components.MyComponent['first']>,
     middle: {} as PropOptions<Components.MyComponent['middle']>,
     last: {} as PropOptions<Components.MyComponent['last']>,
+    color: {} as PropOptions<Components.MyComponent['color']>,
   },
 
 
@@ -33,6 +34,7 @@ export const MyTest = /*@__PURE__*/ Vue.extend({
 
   props: {
     color: {} as PropOptions<Components.MyTest['color']>,
+    title: {} as PropOptions<Components.MyTest['title']>,
   },
 
 

@@ -12,11 +12,13 @@ export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-co
   'first',
   'middle',
   'last',
+  'color',
   'myChange'
 ]);
 
 
 export const MyTest = /*@__PURE__*/ defineContainer<JSX.MyTest>('my-test', undefined, [
-  'color'
+  'color',
+  'title'
 ]);
 

@@ -71,17 +71,17 @@ importers:
     dependencies:
       '@stencil/core':
         specifier: ^4.0.0
-        version: 4.0.0
+        version: 4.0.2
       stencil-vue2-output-target:
         specifier: ^0.0.4
-        version: 0.0.4(@stencil/core@4.0.0)
+        version: 0.0.4(@stencil/core@4.0.2)
     devDependencies:
       '@stencil/react-output-target':
         specifier: ^0.5.3
-        version: 0.5.3(@stencil/core@4.0.0)
+        version: 0.5.3(@stencil/core@4.0.2)
       '@stencil/vue-output-target':
         specifier: ^0.8.6
-        version: 0.8.6(@stencil/core@4.0.0)
+        version: 0.8.6(@stencil/core@4.0.2)
       '@types/jest':
         specifier: ^27.5.2
         version: 27.5.2
@@ -105,7 +105,7 @@ importers:
         version: 19.11.1(typescript@5.1.6)
       stencil-solid-output-target:
         specifier: github:arthur-fontaine/stencil-solid-output-target#pull/14/head
-        version: github.com/arthur-fontaine/stencil-solid-output-target/11c806ca8680e6f7ec20f720d593bd1a3827ba47(@stencil/core@4.0.0)
+        version: github.com/arthur-fontaine/stencil-solid-output-target/1e23ea424e06f811e2fb2b92e1a60adf38dad6bf(@stencil/core@4.0.2)
 
   packages/stencil-test/loader: {}
 
@@ -1262,25 +1262,25 @@ packages:
       '@sinonjs/commons': 1.8.6
     dev: true
 
-  /@stencil/core@4.0.0:
-    resolution: {integrity: sha512-BR1MBv2315qKJ7aukIZ5i9cYYyMWktS7WNAsCl5Q9ZQRtUiNhw4LZd0xuvyZDXy+eQ4O/W3Qs4FHTCBNhYjarQ==}
+  /@stencil/core@4.0.2:
+    resolution: {integrity: sha512-1AnLpHAQDHB+DbM8VpuZikMMmIAtLrkYHMBm+pXKj+EPQqsTcyiZ3a7MAqajdM0WlOXb9rfTZT4aYbPwvItEJw==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
 
-  /@stencil/react-output-target@0.5.3(@stencil/core@4.0.0):
+  /@stencil/react-output-target@0.5.3(@stencil/core@4.0.2):
     resolution: {integrity: sha512-68jwRp35CjAcwhTJ9yFD/3n+jrHOqvEH2jreVuPVvZK+4tkhPlYlwz0d1E1RlF3jyifUSfdkWUGgXIEy8Fo3yw==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0'
     dependencies:
-      '@stencil/core': 4.0.0
+      '@stencil/core': 4.0.2
     dev: true
 
-  /@stencil/vue-output-target@0.8.6(@stencil/core@4.0.0):
+  /@stencil/vue-output-target@0.8.6(@stencil/core@4.0.2):
     resolution: {integrity: sha512-B1gQW8FWeU7x/KBPm9R28jYFGN5NsZTZR4jwfDMhKBmU1Q2dIxFY52ARhbrfj5tJQxKoxr2tQJD2S14r9t1v7w==}
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3 || >= 4.0.0-beta.0 || >= 4.0.0'
     dependencies:
-      '@stencil/core': 4.0.0
+      '@stencil/core': 4.0.2
     dev: true
 
   /@tootallnate/once@1.1.2:
@@ -4992,12 +4992,12 @@ packages:
       escape-string-regexp: 2.0.0
     dev: true
 
-  /stencil-vue2-output-target@0.0.4(@stencil/core@4.0.0):
+  /stencil-vue2-output-target@0.0.4(@stencil/core@4.0.2):
     resolution: {integrity: sha512-57E0J3Wc8hs3Is2AnZWbxEHhUMrPoJtR8rSPpacYVudd4n+n6LJwT5Ubm3jQv8TF3QZ33ry5lRPkLk9yN+xUuQ==}
     peerDependencies:
       '@stencil/core': '>=1.8.0'
     dependencies:
-      '@stencil/core': 4.0.0
+      '@stencil/core': 4.0.2
       path: 0.12.7
     dev: false
 
@@ -5736,14 +5736,14 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/arthur-fontaine/stencil-solid-output-target/11c806ca8680e6f7ec20f720d593bd1a3827ba47(@stencil/core@4.0.0):
-    resolution: {tarball: https://codeload.github.com/arthur-fontaine/stencil-solid-output-target/tar.gz/11c806ca8680e6f7ec20f720d593bd1a3827ba47}
-    id: github.com/arthur-fontaine/stencil-solid-output-target/11c806ca8680e6f7ec20f720d593bd1a3827ba47
+  github.com/arthur-fontaine/stencil-solid-output-target/1e23ea424e06f811e2fb2b92e1a60adf38dad6bf(@stencil/core@4.0.2):
+    resolution: {tarball: https://codeload.github.com/arthur-fontaine/stencil-solid-output-target/tar.gz/1e23ea424e06f811e2fb2b92e1a60adf38dad6bf}
+    id: github.com/arthur-fontaine/stencil-solid-output-target/1e23ea424e06f811e2fb2b92e1a60adf38dad6bf
     name: stencil-solid-output-target
     version: 0.1.2
     peerDependencies:
       '@stencil/core': ^2.9.0
     dependencies:
-      '@stencil/core': 4.0.0
+      '@stencil/core': 4.0.2
       hyper-dom-expressions: 0.33.14
     dev: true

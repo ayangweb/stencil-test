@@ -1,12 +1,13 @@
 import { Component, Host, Prop, h } from '@stencil/core';
-
-export type LiteralUnion<T extends string> = T | (string & {});
+import type { LiteralUnion } from '@/types';
 
 @Component({
   tag: 'my-test',
 })
 export class MyTest {
   @Prop() color: LiteralUnion<'red' | 'pink'>;
+
+  @Prop() title: string;
 
   render() {
     return (

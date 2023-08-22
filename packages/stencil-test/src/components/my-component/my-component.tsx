@@ -1,5 +1,6 @@
 import { Component, Event, EventEmitter, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
+import type { LiteralUnion } from '@/types';
 
 @Component({
   tag: 'my-component',
@@ -21,6 +22,8 @@ export class MyComponent {
    * The last name
    */
   @Prop() last: string;
+
+  @Prop() color: LiteralUnion<'red' | 'pink'>;
 
   /**
    * change event

@@ -5,10 +5,11 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { LiteralUnion } from "./components/my-test/my-test";
-export { LiteralUnion } from "./components/my-test/my-test";
+import { LiteralUnion } from "./types/index.d";
+export { LiteralUnion } from "./types/index.d";
 export namespace Components {
     interface MyComponent {
+        "color": LiteralUnion<'red' | 'pink'>;
         /**
           * The first name
          */
@@ -24,6 +25,7 @@ export namespace Components {
     }
     interface MyTest {
         "color": LiteralUnion<'red' | 'pink'>;
+        "title": string;
     }
 }
 export interface MyComponentCustomEvent<T> extends CustomEvent<T> {
@@ -50,6 +52,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface MyComponent {
+        "color"?: LiteralUnion<'red' | 'pink'>;
         /**
           * The first name
          */
@@ -69,6 +72,7 @@ declare namespace LocalJSX {
     }
     interface MyTest {
         "color"?: LiteralUnion<'red' | 'pink'>;
+        "title"?: string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
