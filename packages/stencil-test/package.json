@@ -26,8 +26,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "^4.0.0",
-    "stencil-vue2-output-target": "^0.0.4"
+    "@stencil/core": "^4.0.0"
   },
   "devDependencies": {
     "@stencil/react-output-target": "^0.5.3",
@@ -39,7 +38,8 @@
     "jest-cli": "^27.5.1",
     "npm": "^9.8.1",
     "puppeteer": "^19.11.1",
-    "stencil-solid-output-target": "github:arthur-fontaine/stencil-solid-output-target#pull/14/head"
+    "stencil-solid-output-target": "^4.0.0",
+    "stencil-vue2-output-target": "^0.0.4"
   },
   "license": "MIT"
 }
