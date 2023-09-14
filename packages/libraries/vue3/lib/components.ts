@@ -19,6 +19,7 @@ export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-co
 
 export const MyTest = /*@__PURE__*/ defineContainer<JSX.MyTest>('my-test', undefined, [
   'color',
-  'title'
+  'title',
+  'value'
 ]);
 

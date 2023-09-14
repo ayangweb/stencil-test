@@ -35,6 +35,7 @@ export const MyTest = /*@__PURE__*/ Vue.extend({
   props: {
     color: {} as PropOptions<Components.MyTest['color']>,
     title: {} as PropOptions<Components.MyTest['title']>,
+    value: {} as PropOptions<Components.MyTest['value']>,
   },
 
 

@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h } from '@stencil/core';
+import { Component, Host, Prop, Watch, h } from '@stencil/core';
 import type { LiteralUnion } from '@/types';
 
 @Component({
@@ -8,6 +8,13 @@ export class MyTest {
   @Prop() color: LiteralUnion<'red' | 'pink'>;
 
   @Prop() title: string;
+
+  @Prop() value: number[];
+
+  @Watch('value')
+  watchPropValue(value: number[]) {
+    console.log(value);
+  }
 
   render() {
     return (

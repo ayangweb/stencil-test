@@ -26,6 +26,7 @@ export namespace Components {
     interface MyTest {
         "color": LiteralUnion<'red' | 'pink'>;
         "title": string;
+        "value": number[];
     }
 }
 export interface MyComponentCustomEvent<T> extends CustomEvent<T> {
@@ -73,6 +74,7 @@ declare namespace LocalJSX {
     interface MyTest {
         "color"?: LiteralUnion<'red' | 'pink'>;
         "title"?: string;
+        "value"?: number[];
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
